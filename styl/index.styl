@@ -1,0 +1,69 @@
+@import('reset.styl')
+global-reset()
+
+a
+    text-decoration none 
+    outline none 
+    color #666
+.histogram_container
+    position relative
+    margin 10px 0 25px 60px
+    .histogram_bg_line
+        border #999 solid
+        border-width 0 1px 1px 1px
+        border-right-color #eee
+        overflow hidden
+        width 90%
+        ul 
+            overflow hidden
+            border #eee solid
+            border-width 1px 0 0 0
+            li 
+                float left
+                width 20%
+                div
+                    border-right 1px solid #eee
+                    height 30px
+    .histogram_content
+        position absolute
+        left 0px
+        top 0
+        width 99%
+        height 100%  
+        ul
+            width 100%
+            li 
+                float left
+                height 100%
+                width 20%      
+                position relative
+                text-align center
+                a 
+                    position absolute 
+                    bottom 0 
+                    right 0 
+                    display block 
+                    width 30px 
+                .name
+                    position absolute
+                    bottom -20px
+                    left 0px
+                    white-space nowrap
+                    display inline-block
+                    width 100%
+                    font-size 12px
+                .histogram_box
+                    position relative
+                    display inline-block
+                    height 100%
+                    width 26px
+    .histogram_y 
+        position absolute
+        left -60px
+        top -10px
+        li 
+            text-align right
+            width 55px
+            padding-right 5px
+            color #333
+                                       
